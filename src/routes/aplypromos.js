@@ -22,7 +22,7 @@ async function fetcAplyPromo(code) {
       method: "POST",
       headers : {
         "content-type" : "application/json",
-        "authorization" : "Bearer 1726002397767agxtAx02sPtFEAh1aYXHYEQxMtgPC79hinKk4hzkNqX5MXklYK8QvWcHJGlqVVb61605088023"
+        "authorization" : "Bearer 1726079242936cDYdXfWUqXP6U8xnUjhlHopnPlBmxhpyYHQZPIRrFr3cEQzDL3V5EMzWWe8lcvR66656139471"
       },
        body: JSON.stringify({  "promoCode": code})
 
@@ -111,7 +111,7 @@ function saveCodes(codes) {
 async function sendReq() {
     let codes = loadCodes(); // تحميل الأكواد من ملف JSON
 
-    for (let index = 0; index < codes.length; index++) {
+    for (let index = 0; index < codes.length) {
         await fetcAplyPromo(codes[index]);
 
         // حذف الكود من المصفوفة والملف بعد استخدامه
