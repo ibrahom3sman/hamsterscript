@@ -1,5 +1,5 @@
-const minMinutes = 0;
-const maxMinutes = 1;
+const minMinutes = 5;
+const maxMinutes = 10;
 
 function myFunction() {
     console.log("الدالة شغالة!");
