@@ -1,0 +1,29 @@
+cipher
+
+post
+https://api.hamsterkombatgame.io/clicker/claim-daily-cipher
+
+{cipher: "marta"}
+
+buy or upgrade
+
+post
+
+https://api.hamsterkombatgame.io/clicker/buy-upgrade
+
+{
+   upgradeId: "youtube",
+   timestamp: Date.now()
+}
+
+tap
+
+post 
+
+https://api.hamsterkombatgame.io/clicker/tap 
+{
+  availabeTaps: 444,
+  count: 1,
+  timestamp: Date.now()
+}
+    

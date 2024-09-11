@@ -1,0 +1,657 @@
+Script started on 2024-09-10 08:18:29+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="44" LINES="23"]
+[?2004h[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m node routes/GnerateKeysCodes.js [A[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m cd storage/downloads/hamsterscripts/newVertionOfHamsterAtouWorker/src/[A[A[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m nod[14Pe routes/GnerateKeysCodes.js 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[K[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m node routes/GnerateKeysCodes.js [K[A[K[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m node routes/GnerateKeysCodes.js [A[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7mtm[27m[7mu[27m[7mx[27m[A[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m tmux
+[?2004lThe program tmux is not installed. Install it by executing:
+ pkg install tmux
+[?2004h[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m pk g install tmux
+[?2004lNo mirror or mirror group selected. You might want to select one by running 'termux-change-repo'
+Checking availability of current mirror:
+[*] https://mirrors.saswata.xyz/termux/termux-main: ok
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 7%Reading state information... Done
+The following NEW packages will be installed:
+  tmux
+0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 341 kB of archives.
+After this operation, 1057 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Connected to mirrors.saswata.xyz (150.1[0m[33m                                           0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Get:1 https://mirrors.saswata.xyz/termux/termux-main stable/main aarch64 tmux aarch64 3.4 [341 kB]
+[33m4% [1 tmux 16.1 kB/341 kB 5%][0m[33m19% [1 tmux 81.7 kB/341 kB 24%][0m[33m                               46% [1 tmux 196 kB/341 kB 58%][0m[33m                              100% [Working][0m              Fetched 341 kB in 3s (111 kB/s)
+
+7[0;22r8[1ASelecting previously unselected package tmux.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8520 files and directories currently installed.)
+Preparing to unpack .../archives/tmux_3.4_aarch64.deb ...
+7[23;0f[42m[30mProgress: [  0%][49m[39m [......................] 87[23;0f[42m[30mProgress: [ 20%][49m[39m [####..................] 8Unpacking tmux (3.4) ...
+7[23;0f[42m[30mProgress: [ 40%][49m[39m [########..............] 8Setting up tmux (3.4) ...
+7[23;0f[42m[30mProgress: [ 60%][49m[39m [#############.........] 87[23;0f[42m[30mProgress: [ 80%][49m[39m [#################.....] 8
+7[0;23r8[1A[J[?2004h[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m [K[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m [K[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m tm ux
+[?2004l[?1049h[22;0;0t[?1h=[H[2J[?12l[?25h[?1000l[?1002l[?1003l[?1006l[?1005l[?2004h(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;23r[c[>c[>q]10;?\]11;?\[1;1H[?1006l[?1000l[?1002l[?1003l[?1006h[?1000h[?1002h[?25l[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:tmux*      "localhost" 08:20 10-Sep-24(B[m[?12l[?25h[1;1H(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;23r[1;1H[?1006l[?1000l[?1002l[?1003l[?1006h[?1000h[?1002h[?25l[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:tmux*      "localhost" 08:20 10-Sep-24(B[m[?12l[?25h[1;1H[?69h[?7727h[?69h(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;23r[1;23r[s[?69h[?7727h[?69h(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;23r[1;23r[s[1;1H[?1006l[?1000l[?1002l[?1003l[?1006h[?1000h[?1002h[?25l[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:tmux*      "localhost" 08:20 10-Sep-24(B[m[?12l[?25h[1;1H[32m~/.../newVertionOfHamsterAtouWorker/src[39m [97m$[39m [?25l[30m[42m[23;1H[0] 0:bash*      "localhost" 08:20 10-Sep-24(B[m[?12l[?25h[1;43H[?69h(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;37r[1;37r[s[1;43H[?1006l[?1000l[?1002l[?1003l[?1006h[?1000h[?1002h[?25l[32m[H~/.../newVertionOfHamsterAtouWorker/src[39m [97m$[39m [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*      "localhost" 08:20 10-Sep-24(B[m[?12l[?25h[1;43H[H[32m~/.../newVertionOfHamsterAtouWorker/src[39m [97m$[39m [K[?69h(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;23r[1;23r[s[1;43H[?1006l[?1000l[?1002l[?1003l[?1006h[?1000h[?1002h[?25l[32m[H~/.../newVertionOfHamsterAtouWorker/src[39m [97m$[39m [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*      "localhost" 08:20 10-Sep-24(B[m[?12l[?25h[1;43H[H[32m~/.../newVertionOfHamsterAtouWorker/src[39m [97m$[39m [K[?25l[30m[42m[23;1H[0] 0:bash*      "localhost" 08:21 10-Sep-24(B[m[?12l[?25h[1;43H[?69h(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;25r[1;25r[s[1;43H[?1006l[?1000l[?1002l[?1003l[?1006h[?1000h[?1002h[?25l[32m[H~/.../newVertionOfHamsterAtouWorker/src[39m [97m$[39m [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*      "localhost" 08:21 10-Sep-24(B[m[?12l[?25h[1;43H[H[32m~/.../newVertionOfHamsterAtouWorker/src[39m [97m$[39m [K[?25l[32m[H~/.../newVertionOfHamsterAtouWorker/src[30m[43m[0/0][39m[49m[2;1H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?12l[?25h[1;43H[?25l[30m[42m[25;1H[0] 0:[tmux]*    "localhost" 08:21 10-Sep-24(B[m[?12l[?25h[1;43H
+
+
+
+[A[A
+[A[?69h(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;23r[1;23r[s]10;?\]11;?\[1;1H[?1006l[?1000l[?1002l[?1003l[?1006h[?1000h[?1002h[?25l                                       [30m[43m[0/2][39m[49m[2;1H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:[tmux]*    "localhost" 08:21 10-Sep-24(B[m[?12l[?25h[1;1H[1;22r[1;1H[1L[1;40H[30m[43m[1/2][1;1H[39m[49m                                       
+                                            [1;40H[30m[43m[1/2][1;1H[39m[49m                                       
+                                            [2;1H[1;23r[1;1H[1;22r[1;1H[1L[1;40H[30m[43m[2/2][1;1H[49m[32m~/.../newVertionOfHamsterAtouWorker/src
+[39m                                            [1;40H[30m[43m[2/2][1;1H[49m[32m~/.../newVertionOfHamsterAtouWorker/src
+[39m                                            [2;1H[1;23r[1;42H
+
+
+
+
+[A[A[A[A[1;42H[?25l[32m[H~/.../newVertionOfHamsterAtouWorker/src[39m [97m$[39m [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?12l[?25h[1;43H[?25l[30m[42m[23;1H[0] 0:bash*      "localhost" 08:21 10-Sep-24(B[m[?12l[?25h[1;43Hq[K٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١[3;1H٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١٨M٦٤;٧;١[5;1H٨M٦٤;٧;١٨M[K[K٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٨;٢١M ٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٨;٢١M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٥;٧;١٦M ٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M ٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M ٦٥;٧;١٦M٦٥;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M ٦٤;٧;١٦M٦٤;٧;١٦M٦٤;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M ٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٦٥;٧;١٦M٠;٧;٢٣M٠;٧;٢٣m٠;٥;٢٣M٠;٥;٢٣m^C
+[32m~/.../newVertionOfHamsterAtouWorker/src[39m [97m$[39m cl ear
+[1;22r[1;1H[2;22r[21S[1;1H[K[1;23r[1;1H[32m~/.../newVertionOfHamsterAtouWorker/src[39m [97m$[39m ex it
+logout
+[1;23r(B[m[?1l>[H[2J[?12l[?25h[?1000l[?1002l[?1003l[?1006l[?1005l[?2004l[?7727l[?1004l[?69l[?1049l[23;0;0t[exited]
+[?2004h[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m [K[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m [K[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m tmux[A[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m pkg install tmux[A[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m tmux[K[A[0;32m~/.../newVertionOfHamsterAtouWorker/src[0m [0;97m$[0m node routes/GnerateKeysCodes.js 
+[?2004l1725949422036-59193587697492940
+{
+  clientToken: [32m'112887b0-a8af-4eb2-ac63-d82df78283d9:deviceid:1725949421046-909215924139897600:8CemgtFx96W:1725949422976'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'FLUF-X4C-FZSL-WG17-2M8'[39m }
+code FLUF-X4C-FZSL-WG17-2M8
+[ [32m'FLUF-X4C-FZSL-WG17-2M8'[39m ]
+{
+  clientToken: [32m'112887b0-a8af-4eb2-ac63-d82df78283d9:deviceid:1725949543499-135552378995129620:8Cempo7LrO2:1725949543645'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m }
+code FLUF-X4L-NSEZ-WTPJ-BKT
+[ [32m'FLUF-X4C-FZSL-WG17-2M8'[39m, [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m ]
+{
+  clientToken: [32m'112887b0-a8af-4eb2-ac63-d82df78283d9:deviceid:1725949664366-824083924009749800:8CemyjBzTGA:1725949664539'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m }
+code FLUF-W3P-J3FP-WLPR-VJK
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m
+]
+{
+  clientToken: [32m'112887b0-a8af-4eb2-ac63-d82df78283d9:deviceid:1725949785047-588931131411177000:8CemHdUrray:1725949785174'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m }
+code FLUF-Y3X-YXY8-WA22-W7J
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m
+]
+{
+  clientToken: [32m'112887b0-a8af-4eb2-ac63-d82df78283d9:deviceid:1725949905581-950877155816814700:8CemQ7VHQAw:1725949905748'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'FLUF-W31-W23L-W62M-CEK'[39m }
+code FLUF-W31-W23L-W62M-CEK
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m
+]
+{
+  clientToken: [32m'112887b0-a8af-4eb2-ac63-d82df78283d9:deviceid:1725950029656-217831650013052830:8CemZhWKIwU:1725950029813'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'FLUF-X39-QYSS-WR19-MBE'[39m }
+code FLUF-X39-QYSS-WR19-MBE
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m
+]
+{
+  clientToken: [32m'112887b0-a8af-4eb2-ac63-d82df78283d9:deviceid:1725950150445-762884739734485500:8Cen8d3Rg4i:1725950150597'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m }
+code FLUF-W45-5RTW-WLQ5-X4Z
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m
+]
+{
+  clientToken: [32m'112887b0-a8af-4eb2-ac63-d82df78283d9:deviceid:1725950271814-523749404870047040:8CenhaAypUG:1725950271970'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m }
+code FLUF-Y3S-9M7V-WT2P-AHM
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m
+]
+{
+  clientToken: [32m'112887b0-a8af-4eb2-ac63-d82df78283d9:deviceid:1725950393261-276514531843647940:8Cenq8PwYg8:1725950393453'[39m
+}
+{
+  clientToken: [32m'e68b39d2-4880-4a31-b3aa-0393e7df10c7:deviceid:1725950393558-554470694239071800:8Cenqa6rss4:1725950393731'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'TILE-X35-7XJJ-WTPT-PX8'[39m }
+code TILE-X35-7XJJ-WTPT-PX8
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m
+]
+{
+  clientToken: [32m'e68b39d2-4880-4a31-b3aa-0393e7df10c7:deviceid:1725950494991-502682959471397950:8CenxEkxTGS:1725950495141'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'TILE-W4H-NGXB-W6QY-XRS'[39m }
+code TILE-W4H-NGXB-W6QY-XRS
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m
+]
+{
+  clientToken: [32m'e68b39d2-4880-4a31-b3aa-0393e7df10c7:deviceid:1725950633450-586408806617297400:8CenHSPHAka:1725950633732'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'TILE-Z41-H5M7-WYQK-VX7'[39m }
+code TILE-Z41-H5M7-WYQK-VX7
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m,
+  [32m'TILE-Z41-H5M7-WYQK-VX7'[39m
+]
+{
+  clientToken: [32m'e68b39d2-4880-4a31-b3aa-0393e7df10c7:deviceid:1725950736552-865470861663675900:8CenPucTRuG:1725950736690'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'TILE-X45-JXN4-W8P6-KE1'[39m }
+code TILE-X45-JXN4-W8P6-KE1
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m,
+  [32m'TILE-Z41-H5M7-WYQK-VX7'[39m,
+  [32m'TILE-X45-JXN4-W8P6-KE1'[39m
+]
+{
+  clientToken: [32m'e68b39d2-4880-4a31-b3aa-0393e7df10c7:deviceid:1725950839651-539466471199836300:8CenX6jemss:1725950839794'[39m
+}
+{
+  clientToken: [32m'ef319a80-949a-492e-8ee0-424fb5fc20a6:deviceid:1725950839967-332921863852703600:8CenX7zRfyk:1725950840085'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'TRIM-X3R-VY1J-W81T-TLR'[39m }
+code TRIM-X3R-VY1J-W81T-TLR
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m,
+  [32m'TILE-Z41-H5M7-WYQK-VX7'[39m,
+  [32m'TILE-X45-JXN4-W8P6-KE1'[39m,
+  [32m'TRIM-X3R-VY1J-W81T-TLR'[39m
+]
+{
+  clientToken: [32m'ef319a80-949a-492e-8ee0-424fb5fc20a6:deviceid:1725951019219-783728610495417100:8CeoamUtIko:1725951019483'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'TRIM-X4J-1YHX-WJ2H-W31'[39m }
+code TRIM-X4J-1YHX-WJ2H-W31
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m,
+  [32m'TILE-Z41-H5M7-WYQK-VX7'[39m,
+  [32m'TILE-X45-JXN4-W8P6-KE1'[39m,
+  [32m'TRIM-X3R-VY1J-W81T-TLR'[39m,
+  [32m'TRIM-X4J-1YHX-WJ2H-W31'[39m
+]
+{
+  clientToken: [32m'ef319a80-949a-492e-8ee0-424fb5fc20a6:deviceid:1725951182313-589905743771742700:8CeomoZYIg8:1725951182445'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'TRIM-Z4E-37Y8-WJP6-BCF'[39m }
+code TRIM-Z4E-37Y8-WJP6-BCF
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m,
+  [32m'TILE-Z41-H5M7-WYQK-VX7'[39m,
+  [32m'TILE-X45-JXN4-W8P6-KE1'[39m,
+  [32m'TRIM-X3R-VY1J-W81T-TLR'[39m,
+  [32m'TRIM-X4J-1YHX-WJ2H-W31'[39m,
+  [32m'TRIM-Z4E-37Y8-WJP6-BCF'[39m
+]
+{
+  clientToken: [32m'ef319a80-949a-492e-8ee0-424fb5fc20a6:deviceid:1725951361877-333865528399612160:8CeozF7ZnOq:1725951362007'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'TRIM-W3R-78KX-WWPV-B5G'[39m }
+code TRIM-W3R-78KX-WWPV-B5G
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m,
+  [32m'TILE-Z41-H5M7-WYQK-VX7'[39m,
+  [32m'TILE-X45-JXN4-W8P6-KE1'[39m,
+  [32m'TRIM-X3R-VY1J-W81T-TLR'[39m,
+  [32m'TRIM-X4J-1YHX-WJ2H-W31'[39m,
+  [32m'TRIM-Z4E-37Y8-WJP6-BCF'[39m,
+  [32m'TRIM-W3R-78KX-WWPV-B5G'[39m
+]
+{
+  clientToken: [32m'ef319a80-949a-492e-8ee0-424fb5fc20a6:deviceid:1725951526474-773010376652146200:8CeoLONPIk4:1725951526635'[39m
+}
+{
+  clientToken: [32m'04ebd6de-69b7-43d1-9c4b-04a6ca3305af:deviceid:1725951526734-270330051731703100:8CeoLQ13pKa:1725951526899'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'STONE-W4R-DTHT-WP2N-JNL'[39m }
+code STONE-W4R-DTHT-WP2N-JNL
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m,
+  [32m'TILE-Z41-H5M7-WYQK-VX7'[39m,
+  [32m'TILE-X45-JXN4-W8P6-KE1'[39m,
+  [32m'TRIM-X3R-VY1J-W81T-TLR'[39m,
+  [32m'TRIM-X4J-1YHX-WJ2H-W31'[39m,
+  [32m'TRIM-Z4E-37Y8-WJP6-BCF'[39m,
+  [32m'TRIM-W3R-78KX-WWPV-B5G'[39m,
+  [32m'STONE-W4R-DTHT-WP2N-JNL'[39m
+]
+{
+  clientToken: [32m'04ebd6de-69b7-43d1-9c4b-04a6ca3305af:deviceid:1725951629365-147873359286880400:8CeoTpMCuk2:1725951629512'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'STONE-Y4W-HPLX-WAPX-KTZ'[39m }
+code STONE-Y4W-HPLX-WAPX-KTZ
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m,
+  [32m'TILE-Z41-H5M7-WYQK-VX7'[39m,
+  [32m'TILE-X45-JXN4-W8P6-KE1'[39m,
+  [32m'TRIM-X3R-VY1J-W81T-TLR'[39m,
+  [32m'TRIM-X4J-1YHX-WJ2H-W31'[39m,
+  [32m'TRIM-Z4E-37Y8-WJP6-BCF'[39m,
+  [32m'TRIM-W3R-78KX-WWPV-B5G'[39m,
+  [32m'STONE-W4R-DTHT-WP2N-JNL'[39m,
+  [32m'STONE-Y4W-HPLX-WAPX-KTZ'[39m
+]
+{
+  clientToken: [32m'04ebd6de-69b7-43d1-9c4b-04a6ca3305af:deviceid:1725951730932-29858637273252332:8Cep0Z6mS4A:1725951731882'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'STONE-Y3N-LMQD-WE1T-H16'[39m }
+code STONE-Y3N-LMQD-WE1T-H16
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m,
+  [32m'TILE-Z41-H5M7-WYQK-VX7'[39m,
+  [32m'TILE-X45-JXN4-W8P6-KE1'[39m,
+  [32m'TRIM-X3R-VY1J-W81T-TLR'[39m,
+  [32m'TRIM-X4J-1YHX-WJ2H-W31'[39m,
+  [32m'TRIM-Z4E-37Y8-WJP6-BCF'[39m,
+  [32m'TRIM-W3R-78KX-WWPV-B5G'[39m,
+  [32m'STONE-W4R-DTHT-WP2N-JNL'[39m,
+  [32m'STONE-Y4W-HPLX-WAPX-KTZ'[39m,
+  [32m'STONE-Y3N-LMQD-WE1T-H16'[39m
+]
+{
+  clientToken: [32m'04ebd6de-69b7-43d1-9c4b-04a6ca3305af:deviceid:1725951834592-256436394458592580:8Cep8A4iQMm:1725951834839'[39m
+}
+[33mtrue[39m
+found code
+{ promoCode: [32m'STONE-W4V-RX8L-W658-3TW'[39m }
+code STONE-W4V-RX8L-W658-3TW
+[
+  [32m'FLUF-X4C-FZSL-WG17-2M8'[39m,
+  [32m'FLUF-X4L-NSEZ-WTPJ-BKT'[39m,
+  [32m'FLUF-W3P-J3FP-WLPR-VJK'[39m,
+  [32m'FLUF-Y3X-YXY8-WA22-W7J'[39m,
+  [32m'FLUF-W31-W23L-W62M-CEK'[39m,
+  [32m'FLUF-X39-QYSS-WR19-MBE'[39m,
+  [32m'FLUF-W45-5RTW-WLQ5-X4Z'[39m,
+  [32m'FLUF-Y3S-9M7V-WT2P-AHM'[39m,
+  [32m'TILE-X35-7XJJ-WTPT-PX8'[39m,
+  [32m'TILE-W4H-NGXB-W6QY-XRS'[39m,
+  [32m'TILE-Z41-H5M7-WYQK-VX7'[39m,
+  [32m'TILE-X45-JXN4-W8P6-KE1'[39m,
+  [32m'TRIM-X3R-VY1J-W81T-TLR'[39m,
+  [32m'TRIM-X4J-1YHX-WJ2H-W31'[39m,
+  [32m'TRIM-Z4E-37Y8-WJP6-BCF'[39m,
+  [32m'TRIM-W3R-78KX-WWPV-B5G'[39m,
+  [32m'STONE-W4R-DTHT-WP2N-JNL'[39m,
+  [32m'STONE-Y4W-HPLX-WAPX-KTZ'[39m,
+  [32m'STONE-Y3N-LMQD-WE1T-H16'[39m,
+  [32m'STONE-W4V-RX8L-W658-3TW'[39m
+]
+{
+  clientToken: [32m'04ebd6de-69b7-43d1-9c4b-04a6ca3305af:deviceid:1725951936789-921714267672230800:8Cepg7aWYwK:1725951936915'[39
