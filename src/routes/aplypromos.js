@@ -111,7 +111,7 @@ function saveCodes(codes) {
 async function sendReq() {
     let codes = loadCodes(); // تحميل الأكواد من ملف JSON
 
-    for (let index = 0; index < codes.length) {
+    for (let index = 0; index < codes.length;) {
         await fetcAplyPromo(codes[index]);
 
         // حذف الكود من المصفوفة والملف بعد استخدامه
