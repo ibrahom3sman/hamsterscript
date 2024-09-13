@@ -74,7 +74,7 @@ async function loginClient(promoId,times) {
     const tokens = [];
     for(let i = 0 ; i < times ; i++)
     {
-      await delay(3000)
+      await delay(5000)
       const clientId = generateClientId();
       const response = await fetch("https://api.gamepromo.io/promo/login-client", {
           method : "POST",
