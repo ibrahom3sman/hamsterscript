@@ -31,6 +31,10 @@ if (process.argv[2] == 'upgrade')
 if (process.argv[2] == 'gnkeys')
 {
   console.log[process.argv];
+  async function waitfirit() {
+    await gnKeys();
+    claimkeys();
+  }
   gnKeys()
 }
 if (process.argv[2] == 'claimkeys')
