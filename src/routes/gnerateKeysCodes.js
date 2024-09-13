@@ -1,3 +1,4 @@
+const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 const {promos} = require('../models/const')
 // توليد UUID جديد
@@ -73,7 +74,7 @@ async function loginClient(promoId,times) {
     const tokens = [];
     for(let i = 0 ; i < times ; i++)
     {
-      await delay(5000)
+      await delay(3000)
       const clientId = generateClientId();
       const response = await fetch("https://api.gamepromo.io/promo/login-client", {
           method : "POST",
@@ -96,7 +97,6 @@ async function loginClient(promoId,times) {
      tokens.push(res.clientToken)
      
     }
-     console.log(tokens)
     return await tokens; 
   }
   catch(err){
@@ -107,13 +107,14 @@ async function loginClient(promoId,times) {
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-const promosCodes = [];
-const fs = require('fs');
+
+
 
 async function createCodes() {
     let j = 0;
     const promosCodes = []; // مصفوفة لتخزين الأكواد التي يتم توليدها
-
+    for(let s = 0 ; s <= 5 ; s++)
+    {
     while (j < promos.length) {
         const p = promos[j];
         let token = await loginClient(p.appToken ? p.appToken : p.promoId, p.times);
@@ -121,7 +122,7 @@ async function createCodes() {
         if (token) {
             let codesCount = 0;
             while (codesCount < p.times) {
-                await delay(10000);
+                await delay(5000);
                 const hasCode = await registerEvent(p.promoId, token[codesCount]);
                 if (hasCode) {
                     const code = await createCode(p.promoId, token[codesCount]);
@@ -137,6 +138,7 @@ async function createCodes() {
             }
             j++;
         }
+    }
     }
 
     return promosCodes;

@@ -1,7 +1,7 @@
 require('dotenv/config');
 
 const API = "https://api.hamsterkombatgame.io"
-const tokens = ["Bearer 1725385117639fuOkkHl2ouwDbGn1BKob44jYWX2LNsnBHzAHyhabkV7y9iSTsFAmVnFvgQGoyzrp1605088023","Bearer 1725303737297UjlshLPTPPwDwdcQUCrYp55AnK3PnzqFQUAYwI43Nr58bAjmKav9xKekcC6IsBk21537696848"]
+const tokens = ["Bearer 1726079242936cDYdXfWUqXP6U8xnUjhlHopnPlBmxhpyYHQZPIRrFr3cEQzDL3V5EMzWWe8lcvR66656139471","Bearer 1725385117639fuOkkHl2ouwDbGn1BKob44jYWX2LNsnBHzAHyhabkV7y9iSTsFAmVnFvgQGoyzrp1605088023","Bearer 1725303737297UjlshLPTPPwDwdcQUCrYp55AnK3PnzqFQUAYwI43Nr58bAjmKav9xKekcC6IsBk21537696848", "Bearer 1725433898921U90HU4BcqCpimQ3rw65k2Z3IIGo614jiJTDnGJW4rfeCjde8uzy5qE8b9sO33Aqp7448504201", "Bearer 1725431280822RQPMj5EJI8uMxpuCZCHCKgaEXDcXg0HvdbPOxo1bVzUCslJNfhvDnrckcqQpDRqW7207695273"]
 const promos = [{
    "promoId": "112887b0-a8af-4eb2-ac63-d82df78283d9",
     "times" : 8

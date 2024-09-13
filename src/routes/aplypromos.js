@@ -1,9 +1,7 @@
-const minMinutes = 5;
-const maxMinutes = 10;
+const minMinutes = 0;
+const maxMinutes = 5;
+const tokens = require("../models/const").tokens;
 
-function myFunction() {
-    console.log("الدالة شغالة!");
-}
 
 function delay() {
     // احسب مدة عشوائية بين 15 و 30 دقيقة
@@ -16,13 +14,13 @@ function delay() {
 }
 
 
-async function fetcAplyPromo(code) {
+async function fetcAplyPromo(code, token) {
   try {
    const fetchSetPromo = await fetch("https://api.hamsterkombatgame.io/clicker/apply-promo", {
       method: "POST",
       headers : {
         "content-type" : "application/json",
-        "authorization" : "Bearer 1726079242936cDYdXfWUqXP6U8xnUjhlHopnPlBmxhpyYHQZPIRrFr3cEQzDL3V5EMzWWe8lcvR66656139471"
+        "authorization" : token
       },
        body: JSON.stringify({  "promoCode": code})
 
@@ -36,51 +34,6 @@ console.log("done")
     console.log(err.message)
   }
 }
-
-// const codes =[
-//   'FLUF-W3R-116R-WW6T-2DK',
-//   'FLUF-Z46-AAQY-WE68-WYL',
-//   'FLUF-W3E-EPME-WE6B-AX6',
-//   'FLUF-W3A-LEMT-W64Z-MMZ',
-//   'FLUF-Z4W-FSQR-WA6B-86Y',
-//   'FLUF-X3F-W6M9-WAA7-PZ9',
-//   'FLUF-Y43-V3CA-WNAV-2PF',
-//   'FLUF-X3Z-1PH2-WA9Z-5AT',
-//   'TILE-Y37-4FY9-WPA2-A1H',
-//   'TILE-Y4V-8LG6-W68W-Q6E',
-//   'TILE-Y43-8QMD-W48M-J39',
-//   'TILE-Y3B-JY83-WPA1-SHW',
-//   'TRIM-Y3K-JPLK-WT9R-VG4',
-//   'TRIM-X44-XM73-WY7V-F6D',
-//   'TRIM-X3P-5ZWE-WGA1-ET7',
-//   'TRIM-Z3G-PEWH-WN8R-FTH',
-//   'STONE-W4L-9ZS3-WG9J-2X7',
-//   'STONE-W34-AE6Z-WC8M-L8C',
-//   'STONE-Z4T-H2KE-W8AH-32F',
-//   'STONE-Z4T-LBKZ-WN94-GYR',
-//   'TWERK-Y35-VQ3M-WT8B-68J',
-//   'TWERK-Y3S-6SK9-WAB1-5Z8',       
-//   'TWERK-X4S-85R2-WYCQ-5HW',        
-//   'TWERK-Y4S-B7Z7-WYD6-5RG',         
-//   'POLY-Y4H-LMXY-WCDK-AQ9',              
-//   'POLY-Z4J-SEG3-WED9-YNS',              
-//   'POLY-Y4W-VY89-WEBR-HMB',              
-//   'POLY-Z3W-3Q88-WJCL-WX5',
-//   'MERGE-X3W-8JLQ-WTJV-36P',
-//   'MERGE-Y3J-JVAA-WNHG-T1N',
-//   'MERGE-W3R-GN2N-WTHL-TTQ',
-//   'MERGE-X4B-X7FR-WCN9-67Z',
-//   'ZOO-Y3K-YSZR-W8LD-X1M',
-//   'ZOO-W4Q-17LG-WPMP-H55',
-//   'ZOO-Y3K-3N4S-W8K3-ZNX',
-//   'ZOO-W3Z-15R8-W8LE-XGB',
-//   'CUBE-X4Z-LAMT-WWLN-FG3',
-//   'CUBE-Y34-YMJT-W4KY-PW7',
-//   'CUBE-W4T-X9R6-W8NA-QFP',
-//   'CUBE-W4Y-YG7E-WYN3-HM1'
-// ]
-
-
 
 const fs = require('fs');
 const path = require('path');
@@ -111,16 +64,32 @@ function saveCodes(codes) {
 async function sendReq() {
     let codes = loadCodes(); // تحميل الأكواد من ملف JSON
 
-    for (let index = 0; index < codes.length;) {
-        await fetcAplyPromo(codes[index]);
-
-        // حذف الكود من المصفوفة والملف بعد استخدامه
-        codes.splice(index, 1);
-        saveCodes(codes); // حفظ المصفوفة المحدثة في ملف JSON
-
-        console.log('hi');
-        await delay();
+    // التحقق من أن عدد الأكواد كافٍ لكل حساب
+    if (codes.length < 44 * tokens.length) {
+        console.log('no enoph codes for your acounts');
+        return;
     }
+
+    // تقسيم الأكواد إلى مجموعات (44 كود لكل حساب)
+    let batches = [];
+    for (let i = 0; i < tokens.length; i++) {
+        batches.push(codes.slice(i * 44, (i + 1) * 44));
+    }
+    
+    console.log("Batches: " + batches)
+
+    // إرسال الأكواد لكل حساب بالتوازي
+    await Promise.all(tokens.map(async (token, index) => {
+        let batch = batches[index]; // دفعة الأكواد الخاصة بهذا الحساب
+        for (let code of batch) {
+            await fetcAplyPromo(code, token); // إرسال كل كود مع التوكن
+            console.log(`Code: ${code} sent for token: ${token}`);
+            await delay(); // الانتظار بعد إرسال كل كود
+        }
+    }));
+
+    // حفظ الأكواد المتبقية بعد الإرسال
+    saveCodes(codes.slice(tokens.length * 44)); // حذف الأكواد المرسلة
 }
 //const codesareay = codes.split(",")
 //async function senRequest() {
