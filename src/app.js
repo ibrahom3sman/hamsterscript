@@ -28,14 +28,15 @@ if (process.argv[2] == 'upgrade')
   upgradesRouter()
 }
 
-if (process.argv[2] == 'gnkeys')
+if (process.argv.includes("gnkeys"))
 {
   console.log[process.argv];
   async function waitfirit() {
+    console.log("runing")
     await gnKeys();
     claimkeys();
   }
-  gnKeys()
+  waitfirit()
 }
 if (process.argv[2] == 'claimkeys')
 {
