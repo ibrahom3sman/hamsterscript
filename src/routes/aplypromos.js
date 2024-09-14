@@ -1,5 +1,5 @@
-const minMinutes = 0;
-const maxMinutes = 5;
+const minMinutes = 5;
+const maxMinutes = 10;
 const tokens = require("../models/const").tokens;
 
 
@@ -7,7 +7,7 @@ function delay() {
     // احسب مدة عشوائية بين 15 و 30 دقيقة
     const waitTime = Math.floor(Math.random() * (maxMinutes - minMinutes + 1) + minMinutes) * 60000; // تحويل الدقائق إلى ميلي ثانية
 
-    console.log(`Redeem next code key after : ${waitTime / 60000} `);
+    console.log(`Redeem next code key after : ${waitTime / 60000} min`);
 
     // شغل الدالة بعد المدة العشوائية
    return new Promise(resolve => setTimeout(resolve, waitTime));
@@ -65,7 +65,7 @@ async function sendReq() {
     let codes = loadCodes(); // تحميل الأكواد من ملف JSON
 
     // التحقق من أن عدد الأكواد كافٍ لكل حساب
-    if (codes.length < 44 * tokens.length) {
+    if (codes.length < 48 * tokens.length) {
         console.log('no enoph codes for your acounts');
         return;
     }
@@ -89,7 +89,7 @@ async function sendReq() {
     }));
 
     // حفظ الأكواد المتبقية بعد الإرسال
-    saveCodes(codes.slice(tokens.length * 44)); // حذف الأكواد المرسلة
+    saveCodes(codes.slice(tokens.length * 48)); // حذف الأكواد المرسلة
 }
 //const codesareay = codes.split(",")
 //async function senRequest() {
