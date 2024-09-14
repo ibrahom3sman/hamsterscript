@@ -112,7 +112,7 @@ function delay(ms) {
 
 async function createCodes() {
   return new Promise(async (res,rej) => {
-    let j = 9;
+    let j = 0;
     const promosCodes = []; // مصفوفة لتخزين الأكواد التي يتم توليدها
     for(let s = 0 ; s <= 5 ; s++)
     {
