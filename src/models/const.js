@@ -45,6 +45,11 @@ const promos = [{
   "promoId": "b4170868-cef0-424f-8eb9-be0622e8e8e3",
   "times":4
 },
+{
+  "appToken": "82647f43-3f87-402d-88dd-09a90025313f",
+  "promoId": "c4480ac7-e178-4973-8061-9ed5b2e17954",
+  "times":4
+}
 ];
 exports.API = API;
 exports.tokens = tokens;
