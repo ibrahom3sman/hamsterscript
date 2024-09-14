@@ -73,7 +73,7 @@ async function sendReq() {
     // تقسيم الأكواد إلى مجموعات (44 كود لكل حساب)
     let batches = [];
     for (let i = 0; i < tokens.length; i++) {
-        batches.push(codes.slice(i * 44, (i + 1) * 44));
+        batches.push(codes.slice(i * 48, (i + 1) * 48));
     }
     
     console.log("Batches: " + batches)
