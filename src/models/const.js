@@ -37,7 +37,7 @@ const promos = [{
   "times":4
 },
 {
-  "promoId": "d1690a07-3780-4068-810f-9b5bbf2931b2",
+  "promoId": "bc72d3b9-8e91-4884-9c33-f72482f0db37",
   "times":4
 },
 {
