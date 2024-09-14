@@ -63,6 +63,9 @@ async function get_balance(token) {
         return null;
     }
 }
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 async function auto_upgrade_for_token(token) {
     while (true) {
@@ -74,12 +77,13 @@ async function auto_upgrade_for_token(token) {
        
         for (let upgrade of upgrades) {
            let balance = await get_balance(token);
-            if (upgrade.price <= balance && upgrade.isAvailable && !upgrade.isExpired && upgrade.profitPerHourDelta > 1000 && upgrade.priace <= 2000000) {
+            if (upgrade.price <= balance && upgrade.isAvailable && !upgrade.isExpired && upgrade.profitPerHourDelta > 1000 && upgrade.priace <= 10000000, upgrade.cooldownSeconds == 0) {
   console.log(balance, upgrade.price)
                 const result = await post_upgrade(token, upgrade.id);
                 if (result !== null) {
                     console.log(`Purchased upgrade: ${upgrade.id} for token:`);
                      balance = await get_balance(token);
+                     await delay(2000)
                 }
             }
             else {
