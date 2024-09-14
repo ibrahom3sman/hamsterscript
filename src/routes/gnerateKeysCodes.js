@@ -112,11 +112,12 @@ function delay(ms) {
 
 async function createCodes() {
   return new Promise(async (res,rej) => {
-    let j = 0;
+    
     const promosCodes = []; // مصفوفة لتخزين الأكواد التي يتم توليدها
-    for(let s = 0 ; s <= 5 ; s++)
+    for(let s = 1 ; s <= 5 ; s++)
     {
       console.log("s now: " + s)
+      let j = 0;
     while (j < promos.length) {
         const p = promos[j];
         let token = await loginClient(p.appToken ? p.appToken : p.promoId, p.times);
@@ -140,7 +141,6 @@ async function createCodes() {
             }
             j++;
         }
-    }
     }
    res();
   })
