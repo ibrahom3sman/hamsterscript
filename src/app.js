@@ -34,7 +34,7 @@ if (process.argv.includes("gnkeys"))
   async function waitfirit() {
     console.log("runing")
     await gnKeys();
-    claimkeys();
+    claimKeys();
   }
   waitfirit()
 }
