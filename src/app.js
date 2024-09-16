@@ -17,10 +17,14 @@ const tapRouter = require('./routes/tap').start;
 const upgradesRouter = require('./routes/upgrade').upgrades;
 const gnKeys = require('./routes/gnerateKeysCodes').createCodes;
 const {claimKeys} = require('./routes/aplypromos');
+const {checkTask} = require('./routes/aplyTasks');
 
-if(process.argv[2] =='tap') {
+if(process.argv.includes("tap")) {
     console.log(process.argv)
     tapRouter()
+}
+if(process.argv.includes("tasks")) {
+    checkTask()
 }
 if (process.argv[2] == 'upgrade')
 {
@@ -34,11 +38,11 @@ if (process.argv.includes("gnkeys"))
   async function waitfirit() {
     console.log("runing")
     await gnKeys();
-    claimKeys();
+    await claimKeys();
   }
   waitfirit()
 }
-if (process.argv[2] == 'claimkeys')
+if (process.argv.includes("claimkeys"))
 {
   console.log[process.argv];
   claimKeys()
