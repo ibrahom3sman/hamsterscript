@@ -1,5 +1,5 @@
-const minMinutes = 5;
-const maxMinutes = 10;
+const minMinutes = 1;
+const maxMinutes = 3;
 const tokens = require("../models/const").tokens;
 
 
