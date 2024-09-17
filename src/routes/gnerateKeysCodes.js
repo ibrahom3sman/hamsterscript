@@ -117,7 +117,6 @@ async function createCodes() {
     const promosCodes = []; // مصفوفة لتخزين الأكواد التي يتم توليدها
     while(true)
     {
-      console.log("s now: " + s)
       let j = 0;
     while (j < promos.length) {
         const p = promos[j];
