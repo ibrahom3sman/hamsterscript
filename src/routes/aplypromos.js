@@ -81,10 +81,14 @@ async function sendReq() {
     // إرسال الأكواد لكل حساب بالتوازي
     await Promise.all(tokens.map(async (token, index) => {
         let batch = batches[index]; // دفعة الأكواد الخاصة بهذا الحساب
-        for (let code of batch) {
-            await fetcAplyPromo(code, token); // إرسال كل كود مع التوكن
-            console.log(`Code: ${code} sent for token: ${token}`);
+        for (let code = 0 ; code < batch.length;) {
+           const isClaimed = await fetcAplyPromo(batch[code], token); // إرسال كل كود مع التوكن
+           if(isClaimed) {
+             console.log(`Code: ${batch[code]} sent for token: ${token}`);
             await delay(); // الانتظار بعد إرسال كل كود
+            codes++
+           }
+            
         }
     }));
 
