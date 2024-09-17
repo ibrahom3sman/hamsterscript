@@ -70,7 +70,7 @@ async function sendReq() {
         return;
     }
 
-    // تقسيم الأكواد إلى مجموعات (44 كود لكل حساب)
+    // تقسيم الأكواد إلى مجموعات ( 48كود لكل حساب)
     let batches = [];
     for (let i = 0; i < tokens.length; i++) {
         batches.push(codes.slice(i * 48, (i + 1) * 48));

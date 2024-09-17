@@ -74,6 +74,6 @@ async function checkTaskForTokens() {
     }
     }
   })
-  await Promise.all(promises)
+  return await Promise.all(promises);
 }
 exports.checkTask = checkTaskForTokens;

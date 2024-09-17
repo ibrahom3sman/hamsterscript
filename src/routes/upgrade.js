@@ -83,8 +83,9 @@ async function auto_upgrade_for_token(token) {
                 const result = await post_upgrade(token, upgrade.id);
                 if (result !== null) {
                     console.log(`Purchased upgrade: ${upgrade.id} for token: ${token}`);
+                    await delay(2000)
                      balance = await get_balance(token);
-                     await delay(2000)
+                     
                 }
             }
             else {
